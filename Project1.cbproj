@@ -1,0 +1,216 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{67F652CE-5F97-45FC-B651-0F2078DB459C}</ProjectGuid>
+			<ProjectVersion>12.2</ProjectVersion>
+			<MainSource>Project1.cpp</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<LinkPackageStatics>rtl.lib;vcl.lib;dbrtl.lib;cxLibraryRS15.lib;dxGDIPlusRS15.lib;dxCoreRS15.lib;dxThemeRS15.lib;vclx.lib;cxEditorsRS15.lib;cxDataRS15.lib;vclimg.lib;vcldb.lib;dxBarRS15.lib;dxComnRS15.lib;cxGridRS15.lib;cxExtEditorsRS15.lib;cxPageControlRS15.lib;cxExportRS15.lib;dxSkinsCoreRS15.lib;dxSkinscxPCPainterRS15.lib;dxSkinsdxBarPainterRS15.lib;dxSkinXmas2008BlueRS15.lib;dxSkinBlackRS15.lib;dxSkinBlueRS15.lib;dxSkinCaramelRS15.lib;dxSkinCoffeeRS15.lib;dxSkinDarkRoomRS15.lib;dxSkinDarkSideRS15.lib;dxSkinFoggyRS15.lib;dxSkinGlassOceansRS15.lib;dxSkiniMaginaryRS15.lib;dxSkinLilianRS15.lib;dxSkinLiquidSkyRS15.lib;dxSkinLondonLiquidSkyRS15.lib;dxSkinMcSkinRS15.lib;dxSkinMoneyTwinsRS15.lib;dxSkinOffice2007BlackRS15.lib;dxSkinOffice2007BlueRS15.lib;dxSkinOffice2007GreenRS15.lib;dxSkinOffice2007PinkRS15.lib;dxSkinOffice2007SilverRS15.lib;dxSkinOffice2010BlackRS15.lib;dxSkinOffice2010BlueRS15.lib;dxSkinOffice2010SilverRS15.lib;dxSkinPumpkinRS15.lib;dxSkinSevenRS15.lib;dxSkinSharpRS15.lib;dxSkinSilverRS15.lib;dxSkinSpringTimeRS15.lib;dxSkinStardustRS15.lib;dxSkinSummer2008RS15.lib;dxSkinValentineRS15.lib;adortl.lib;dxNavBarRS15.lib;dxSkinsdxNavBar2PainterRS15.lib;dsnap.lib;dxPSCoreRS15.lib;dxPScxCommonRS15.lib;dxPSLnksRS15.lib;dxPScxExtCommonRS15.lib;dxPScxPCProdRS15.lib;dxPsPrVwAdvRS15.lib;dxBarExtItemsRS15.lib;dxPSPrVwRibbonRS15.lib;dxRibbonRS15.lib;dxPScxGrid6LnkRS15.lib;frx15.lib;fs15.lib;fqb150.lib;bdertl.lib;cxVerticalGridRS15.lib</LinkPackageStatics>
+			<PackageImports>vcl.bpi;rtl.bpi;bcbie.bpi;vclx.bpi;vclactnband.bpi;xmlrtl.bpi;bcbsmp.bpi;VclSmp.bpi;vclimg.bpi;svnui.bpi;svn.bpi;bdertl.bpi;TeeUI.bpi;TeeDB.bpi;Tee.bpi;vcldb.bpi;dbrtl.bpi;vcldbx.bpi;vcltouch.bpi;dsnap.bpi;dsnapcon.bpi;vclib.bpi;ibxpress.bpi;adortl.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;vclie.bpi;inet.bpi;websnap.bpi;webdsnap.bpi;inetdb.bpi;inetdbbde.bpi;inetdbxpress.bpi;soaprtl.bpi;dbexpress.bpi;DbxCommonDriver.bpi;DataSnapIndy10ServerTransport.bpi;DataSnapProviderClient.bpi;DbxClientDriver.bpi;DataSnapClient.bpi;dbxcds.bpi;DataSnapServer.bpi;AzureCloud.bpi;DBXInterBaseDriver.bpi;DBXMySQLDriver.bpi;DBXFirebirdDriver.bpi;DBXSybaseASEDriver.bpi;DBXSybaseASADriver.bpi;DBXOracleDriver.bpi;DBXMSSQLDriver.bpi;DBXInformixDriver.bpi;DBXDb2Driver.bpi;NxCommonRun.bpi;NxCommonDsgn.bpi;NxCollectionRun.bpi;NxCollectionDsgn.bpi;NxGridRun.bpi;NxGridDsgn.bpi;NxDBGridRun.bpi;NxDBGridDsgn.bpi;NxInspectorRun.bpi;NxInspectorDsgn.bpi;NxSheetRun.bpi;NxThirdPartyRun.bpi;NxAddons.bpi;tmsd2011.bpi;tmsexd2011.bpi;tmswizd2011.bpi;tmsxlsd2011.bpi;JclVcl.bpi;Jcl.bpi;JvCore.bpi;JvSystem.bpi;JvStdCtrls.bpi;JvAppFrm.bpi;JvBands.bpi;JvDB.bpi;JvDlgs.bpi;JvBDE.bpi;JvControls.bpi;JvCmp.bpi;JvCrypt.bpi;JvCustom.bpi;JvDocking.bpi;JvDotNetCtrls.bpi;JvGlobus.bpi;JvHMI.bpi;JvJans.bpi;JvManagedThreads.bpi;JvMM.bpi;JvNet.bpi;JvPageComps.bpi;JvPascalInterpreter.bpi;JclDeveloperTools.bpi;JvPluginSystem.bpi;JvPrintPreview.bpi;JvRuntimeDesign.bpi;JvTimeFramework.bpi;JvWizards.bpi;JvXPCtrls.bpi;dxCoreRS15.bpi;cxLibraryRS15.bpi;dxGDIPlusRS15.bpi;dxThemeRS15.bpi;cxEditorsRS15.bpi;cxDataRS15.bpi;cxExtEditorsRS15.bpi;dxBarRS15.bpi;dxComnRS15.bpi;dxBarDBNavRS15.bpi;dxBarExtDBItemsRS15.bpi;dxBarExtItemsRS15.bpi;dxRibbonRS15.bpi;cxBarEditItemRS15.bpi;dxdbtrRS15.bpi;dxtrmdRS15.bpi;dxmdsRS15.bpi;dxDockingRS15.bpi;dxFlowChartRS15.bpi;cxPageControlRS15.bpi;dxLayoutControlRS15.bpi;dxNavBarRS15.bpi;dxorgcRS15.bpi;dxdborRS15.bpi;cxGridRS15.bpi;cxExportRS15.bpi;cxPivotGridRS15.bpi;cxPivotGridChartRS15.bpi;cxPivotGridOLAPRS15.bpi;cxTreeListRS15.bpi;cxTreeListdxBarPopupMenuRS15.bpi;cxSchedulerRS15.bpi;cxSchedulerGridRS15.bpi;dxsbRS15.bpi;dcldxSkinsCoreRS15.bpi;dxSkinsCoreRS15.bpi;dxSkinscxPCPainterRS15.bpi;dxSkinscxScheduler3PainterRS15.bpi;dxSkinsdxDLPainterRS15.bpi;dxSkinsdxBarPainterRS15.bpi;dxSkinsdxNavBar2PainterRS15.bpi;dxSpellCheckerRS15.bpi;cxSpreadSheetRS15.bpi;cxVerticalGridRS15.bpi;dxPSCoreRS15.bpi;dxPSLnksRS15.bpi;dxPScxCommonRS15.bpi;dxPScxExtCommonRS15.bpi;dxPScxGrid6LnkRS15.bpi;dxPScxPivotGrid2LnkRS15.bpi;dxPScxScheduler3LnkRS15.bpi;dxPScxSSLnkRS15.bpi;dxPScxTL5LnkRS15.bpi;dxPScxVGridLnkRS15.bpi;dxPSTeeChartRS15.bpi;dxPSDBTeeChartRS15.bpi;dxPSdxOCLnkRS15.bpi;dxPSdxDBOCLnkRS15.bpi;dxPSdxDBTVLnkRS15.bpi;dxPSdxFCLnkRS15.bpi;dxPSdxLC2LnkRS15.bpi;dxPScxPCProdRS15.bpi;dxPsPrVwAdvRS15.bpi;dxPSPrVwRibbonRS15.bpi;dxSkinsdxRibbonPainterRS15.bpi;dxSkinXmas2008BlueRS15.bpi;dxSkinBlackRS15.bpi;dxSkinBlueRS15.bpi;dxSkinCaramelRS15.bpi;dxSkinCoffeeRS15.bpi;dxSkinDarkRoomRS15.bpi;dxSkinDarkSideRS15.bpi;dxSkinFoggyRS15.bpi;dxSkinGlassOceansRS15.bpi;dxSkiniMaginaryRS15.bpi;dxSkinLilianRS15.bpi;dxSkinLiquidSkyRS15.bpi;dxSkinLondonLiquidSkyRS15.bpi;dxSkinMcSkinRS15.bpi;dxSkinMoneyTwinsRS15.bpi;dxSkinOffice2007BlackRS15.bpi;dxSkinOffice2007BlueRS15.bpi;dxSkinOffice2007GreenRS15.bpi;dxSkinOffice2007PinkRS15.bpi;dxSkinOffice2007SilverRS15.bpi;dxSkinOffice2010BlackRS15.bpi;dxSkinOffice2010BlueRS15.bpi;dxSkinOffice2010SilverRS15.bpi;dxSkinPumpkinRS15.bpi;dxSkinSevenRS15.bpi;dxSkinSharpRS15.bpi;dxSkinSilverRS15.bpi;dxSkinSpringTimeRS15.bpi;dxSkinStardustRS15.bpi;dxSkinSummer2008RS15.bpi;dxSkinValentineRS15.bpi</PackageImports>
+			<Multithreaded>true</Multithreaded>
+			<ProjectType>CppVCLApplication</ProjectType>
+			<_TCHARMapping>wchar_t</_TCHARMapping>
+			<AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;cxLibraryRS15.lib;dxGDIPlusRS15.lib;dxCoreRS15.lib;dxThemeRS15.lib;vclx.lib;cxEditorsRS15.lib;cxDataRS15.lib;vclimg.lib;vcldb.lib;dxBarRS15.lib;dxComnRS15.lib;cxGridRS15.lib;cxExtEditorsRS15.lib;cxPageControlRS15.lib;cxExportRS15.lib;dxSkinsCoreRS15.lib;dxSkinscxPCPainterRS15.lib;dxSkinsdxBarPainterRS15.lib;dxSkinXmas2008BlueRS15.lib;dxSkinBlackRS15.lib;dxSkinBlueRS15.lib;dxSkinCaramelRS15.lib;dxSkinCoffeeRS15.lib;dxSkinDarkRoomRS15.lib;dxSkinDarkSideRS15.lib;dxSkinFoggyRS15.lib;dxSkinGlassOceansRS15.lib;dxSkiniMaginaryRS15.lib;dxSkinLilianRS15.lib;dxSkinLiquidSkyRS15.lib;dxSkinLondonLiquidSkyRS15.lib;dxSkinMcSkinRS15.lib;dxSkinMoneyTwinsRS15.lib;dxSkinOffice2007BlackRS15.lib;dxSkinOffice2007BlueRS15.lib;dxSkinOffice2007GreenRS15.lib;dxSkinOffice2007PinkRS15.lib;dxSkinOffice2007SilverRS15.lib;dxSkinOffice2010BlackRS15.lib;dxSkinOffice2010BlueRS15.lib;dxSkinOffice2010SilverRS15.lib;dxSkinPumpkinRS15.lib;dxSkinSevenRS15.lib;dxSkinSharpRS15.lib;dxSkinSilverRS15.lib;dxSkinSpringTimeRS15.lib;dxSkinStardustRS15.lib;dxSkinSummer2008RS15.lib;dxSkinValentineRS15.lib;adortl.lib;dxNavBarRS15.lib;dxSkinsdxNavBar2PainterRS15.lib;dsnap.lib;dxPSCoreRS15.lib;dxPScxCommonRS15.lib;dxPSLnksRS15.lib;dxPScxExtCommonRS15.lib;dxPScxPCProdRS15.lib;dxPsPrVwAdvRS15.lib;dxBarExtItemsRS15.lib;dxPSPrVwRibbonRS15.lib;dxRibbonRS15.lib;dxPScxGrid6LnkRS15.lib;frx15.lib;fs15.lib;fqb150.lib;bdertl.lib;cxVerticalGridRS15.lib</AllPackageLibs>
+			<OutputExt>exe</OutputExt>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE</DCC_UnitAlias>
+			<DynamicRTL>true</DynamicRTL>
+			<IntermediateOutputDir>.\$(Config)\$(Platform)</IntermediateOutputDir>
+			<FinalOutputDir>.\$(Config)\$(Platform)</FinalOutputDir>
+			<BCC_wpar>false</BCC_wpar>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+			<ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+			<BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<Defines>_DEBUG;$(Defines)</Defines>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+			<DCC_Define>DEBUG</DCC_Define>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<BCC_StackFrames>true</BCC_StackFrames>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DynamicRTL>false</DynamicRTL>
+			<Defines>NDEBUG;$(Defines)</Defines>
+			<TASM_Debugging>None</TASM_Debugging>
+		</PropertyGroup>
+		<ItemGroup>
+			<None Include="ModelSupport_Project1\default.txaPackage"/>
+			<None Include="ModelSupport_Project1\default.txvpck"/>
+			<None Include="Profiling\AQtimeModule1.aqt"/>
+			<CppCompile Include="Project1.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<ResFiles Include="Project1.res">
+				<BuildOrder>1</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="Unit1.cpp">
+				<Form>Form1</Form>
+				<DependentOn>Unit1.h</DependentOn>
+				<BuildOrder>2</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitDataModule1.cpp">
+				<Form>DataModule1</Form>
+				<DesignClass>TDataModule</DesignClass>
+				<DependentOn>UnitDataModule1.h</DependentOn>
+				<BuildOrder>3</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitformBackupRestore.cpp">
+				<Form>FormBackupRestore</Form>
+				<DependentOn>UnitformBackupRestore.h</DependentOn>
+				<BuildOrder>16</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormKategorijaProEdit.cpp">
+				<Form>FormKategorijaProEdit</Form>
+				<DependentOn>UnitFormKategorijaProEdit.h</DependentOn>
+				<BuildOrder>11</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormKategorijeProjekata.cpp">
+				<Form>FormKategorijeProjekata</Form>
+				<DependentOn>UnitFormKategorijeProjekata.h</DependentOn>
+				<BuildOrder>8</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormKoefEdit.cpp">
+				<Form>FormKoefEdit</Form>
+				<DependentOn>UnitFormKoefEdit.h</DependentOn>
+				<BuildOrder>13</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormLogin.cpp">
+				<Form>FormLogin</Form>
+				<DependentOn>UnitFormLogin.h</DependentOn>
+				<BuildOrder>17</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormPrint.cpp">
+				<Form>FormPrint</Form>
+				<DependentOn>UnitFormPrint.h</DependentOn>
+				<BuildOrder>12</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormProjektEdit.cpp">
+				<Form>FormProjektEdit</Form>
+				<DependentOn>UnitFormProjektEdit.h</DependentOn>
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitFormStavkaEdit.cpp">
+				<Form>FormStavkaEdit</Form>
+				<DependentOn>UnitFormStavkaEdit.h</DependentOn>
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitLjudi.cpp">
+				<Form>FormLjudi</Form>
+				<DependentOn>UnitLjudi.h</DependentOn>
+				<BuildOrder>14</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitModels.cpp">
+				<DependentOn>UnitModels.h</DependentOn>
+				<BuildOrder>8</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="UnitUtil.cpp">
+				<DependentOn>UnitUtil.h</DependentOn>
+				<BuildOrder>15</BuildOrder>
+			</CppCompile>
+			<FormResources Include="UnitFormLogin.dfm"/>
+			<FormResources Include="UnitFormPrint.dfm"/>
+			<FormResources Include="UnitFormKategorijeProjekata.dfm"/>
+			<FormResources Include="UnitFormKoefEdit.dfm"/>
+			<FormResources Include="UnitFormProjektEdit.dfm"/>
+			<FormResources Include="UnitFormStavkaEdit.dfm"/>
+			<FormResources Include="UnitLjudi.dfm"/>
+			<FormResources Include="UnitformBackupRestore.dfm"/>
+			<FormResources Include="UnitFormKategorijaProEdit.dfm"/>
+			<FormResources Include="Unit1.dfm"/>
+			<FormResources Include="UnitDataModule1.dfm"/>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')" Project="$(BDS)\Bin\CodeGear.Cpp.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<Source>
+						<Source Name="MainSource">Project1.cpp</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+					<Excluded_Packages>
+						<Excluded_Packages Name="d:\DevExpress VCL\Library\RS15\dclcxSchedulerGridRS15.bpl">ExpressScheduler 3 connection to ExpressQuantumGrid by Developer Express Inc.</Excluded_Packages>
+					</Excluded_Packages>
+				</CPlusPlusBuilder.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
